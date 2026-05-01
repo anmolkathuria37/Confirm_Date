@@ -1,0 +1,16 @@
+/* .footer-basic{
+    width: 100vw;
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    align-self: center;
+    background-color: aqua;
+    position: fixed;
+    bottom: 0;
+} */
+
+footer{
+    margin: 0;
+    padding: 0;
+    height: 50px;
+}
