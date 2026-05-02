@@ -77,37 +77,66 @@ const App1 = () => {
 
     const [noPosition, setNoPosition] = useState({ top: '0px', left: '0px' })
 
-    const moveNoButton = () => {
-        const randomTop = Math.random() * window.innerHeight * 0.8;
+    // const moveNoButton = () => {
+    //     const randomTop = Math.random() * window.innerHeight * 0.8;
 
-        const randomLeft = Math.random() * window.innerWidth * 0.8
+    //     const randomLeft = Math.random() * window.innerWidth * 0.8
 
-        setNoPosition(
-            {
-                top: `${randomTop}px`,
-                left: `${randomLeft}px`
-            }
-        )
-        setIsMoved(true);
+    //     setNoPosition(
+    //         {
+    //             top: `${randomTop}px`,
+    //             left: `${randomLeft}px`
+    //         }
+    //     )
+    //     setIsMoved(true);
 
-        setIndex((prev) => ((prev + 1) % noTexts.length))
+    //     setIndex((prev) => ((prev + 1) % noTexts.length))
 
-        // let randomIndex;
-        // do {
-        //     randomIndex = Math.floor(Math.random() * noTexts.length);
-        // } while (randomIndex === index);
+    //     // let randomIndex;
+    //     // do {
+    //     //     randomIndex = Math.floor(Math.random() * noTexts.length);
+    //     // } while (randomIndex === index);
 
-        // setIndex(randomIndex);
+    //     // setIndex(randomIndex);
 
-        // Increase yes Button Size 
-        setYesSize((prev) => (prev + 8))
-    }
+    //     // Increase yes Button Size 
+    //     setYesSize((prev) => (prev + 8))
+    // }
 
 
     // let noArrayLength = noTexts.length;
 
     // let R = Math.random();
 
+
+    const moveNoButton = () => {
+        const MIN_DISTANCE = 150;
+
+        let newTop, newLeft;
+        let distance = 0;
+
+        do {
+            newTop = Math.random() * window.innerHeight * 0.8;
+            newLeft = Math.random() * window.innerWidth * 0.8;
+
+            const prevTop = parseFloat(noPosition.top);
+            const prevLeft = parseFloat(noPosition.left);
+
+            distance = Math.sqrt(
+                (newTop - prevTop) ** 2 + (newLeft - prevLeft) ** 2
+            );
+
+        } while (distance < MIN_DISTANCE);
+
+        setNoPosition({
+            top: `${newTop}px`,
+            left: `${newLeft}px`
+        });
+
+        setIsMoved(true);
+        setIndex((prev) => ((prev + 1) % noTexts.length));
+        setYesSize((prev) => prev + 8);
+    };
 
     const handleNoClick = () => {
 
@@ -155,7 +184,7 @@ const App1 = () => {
                             {/* <button className='bg-red-500 hover:bg-red-800 text-white px-4 py-2 w-40 text-center' onClick={handleNoClick}> {noTexts[index]} </button> */}
                         </div>
 
-                        <Footer/>
+                        <Footer />
                     </div>)
             }
 
