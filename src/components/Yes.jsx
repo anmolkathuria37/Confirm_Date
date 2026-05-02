@@ -20,7 +20,7 @@ const Yes = () => {
           </button> */}
 
           <div>
-            <h2>Connect With Me Please.. @anmolkathuria </h2>
+            <h2>Connect With Me Please.. <a href="https://www.instagram.com/theanmolkathuria/" className='text-[#d2691e]'> @theanmolkathuria </a></h2>
           </div>
 
         </div>
