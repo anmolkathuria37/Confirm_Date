@@ -23,7 +23,7 @@ export const Footer = () => {
                         <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
                     </ul> */}
                     {/* <p className="copyright m-auto">Anmol Kathuria © 2026</p> */}
-                    <p className="copyright m-auto">Made by: <a href="www.linkedin.com/in/theanmolkathuria-137879292" className='hover:underline'>{author? author.charAt(0)+author.slice(1):"Anmol Kathuria"}</a> © 2026</p>
+                    <p className="copyright m-auto">Made by: <a href="https://www.linkedin.com/in/theanmolkathuria-137879292/" className='hover:underline'>{author? author.charAt(0)+author.slice(1):"Anmol Kathuria"}</a> © 2026</p>
                 </footer>
             </div>
         </>
