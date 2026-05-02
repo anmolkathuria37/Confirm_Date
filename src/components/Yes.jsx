@@ -1,4 +1,5 @@
 import React from 'react'
+import { Footer } from './Footer'
 
 const Yes = () => {
 
@@ -25,6 +26,8 @@ const Yes = () => {
           <div>
             <h2>Connect With Me Please.. <a href="https://www.instagram.com/theanmolkathuria/" className='text-[#d2691e]'> @theanmolkathuria </a></h2>
           </div>
+
+          <Footer/>
 
         </div>
     )
