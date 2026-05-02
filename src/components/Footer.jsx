@@ -1,7 +1,14 @@
 import React from 'react'
 import '../components/Footer.css'
 
+import { useSearchParams } from 'react-router-dom'
+
 export const Footer = () => {
+
+    const [searchParams] = useSearchParams();
+
+    const author = searchParams.get("author");
+
     return (
 
         <>
@@ -15,7 +22,8 @@ export const Footer = () => {
                         <li class="list-inline-item"><a href="#">Terms</a></li>
                         <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
                     </ul> */}
-                    <p className="copyright m-auto">Anmol Kathuria © 2026</p>
+                    {/* <p className="copyright m-auto">Anmol Kathuria © 2026</p> */}
+                    <p className="copyright m-auto">Made by: {author? author.charAt(0)+author.slice(1):"Anmol Kathuria"} © 2026</p>
                 </footer>
             </div>
         </>
