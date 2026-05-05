@@ -180,7 +180,7 @@ const App1 = () => {
                             >
                                 Yes
                             </button>
-                            <button className={`bg-red-500 hover:bg-red-800 hover:cursor-pointer text-white px-2 py-2 transition-all duration-200 ease-in-out max-w-s text-wrap ${isMoved ? 'absolute' : ''}`} onClick={handleNoClick} onMouseEnter={moveNoButton} style={{ top: noPosition.top, left: noPosition.left }}> {noTexts[index]} </button>
+                            <button className={`bg-red-500 hover:bg-red-800 hover:cursor-pointer text-white px-2 py-2 transition-all duration-200 ease-in-out max-w-s text-wrap ${isMoved ? 'absolute' : ''}`} onClick={handleNoClick} onMouseEnter={moveNoButton} onTouchStart={moveNoButton} style={{ top: noPosition.top, left: noPosition.left }}> {noTexts[index]} </button>
                             {/* <button className='bg-red-500 hover:bg-red-800 text-white px-4 py-2 w-40 text-center' onClick={handleNoClick}> {noTexts[index]} </button> */}
                         </div>
 
