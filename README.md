@@ -1,37 +1,45 @@
-# 💌 Would You Like to Date Me? (The Un-rejectable Proposal)
+# 💌 The Un-rejectable Proposal App (Dynamic & Customizable)
 
-An interactive, playful, and mathematically absolute proposal web application built to eliminate the possibility of rejection. 😉
+An interactive, playful, and mathematically absolute proposal web application built to eliminate the possibility of rejection. 😉 Now fully dynamic and customizable via URLs!
 
 ---
 
 ## ✨ Features
 
 * **The Illusion of Choice:** The "No" button uses dynamic position shifting and text alteration on hover, making it physically impossible to click. 
-* **Seamless Success Flow:** Clicking the "Yes" button instantly redirects the user to a custom "Thank You" page.
-* **Direct Call to Action:** The success page features an embedded anchor tag routing directly to my Instagram DM for final confirmations.
-* **Responsive Fluidity:** Smooth animations and layouts built to look great across mobile and desktop devices.
+* **Seamless Success Flow:** Clicking the "Yes" button instantly redirects the user to a custom "Thank You" page with a direct link to my Instagram handle.
+* **🎯 Dynamic Personalization (Custom Routes):** You can personalize the proposal for anyone just by changing the URL path! (e.g., `/Nandini` will dynamically change the text to address Nandini).
+* **✍️ White-Labeling (Query Parameters):** Want to claim ownership? Use the `?author=` query parameter to dynamically change the "Made with 💖 by" footer text.
+
+---
+
+## 🚀 How to Use & Customize (Dynamic URLs)
+
+You don't need to change the code to customize it for different people. Just use the URL structure:
+
+### 1. Personalize for a Specific Person
+Append the person's name as a path parameter at the end of your deployed URL:
+`https://heybeautiful.vercel.app/Nandini`
+*Result:* The page dynamically updates its headings and questions to address **Nandini**.
+
+### 2. Customize the Author Name
+Use the `author` query parameter to update the creator's credit:
+`https://heybeautiful.vercel.app/Nandini?author=Anmol%20Kathuria`
+*Result:* The footer or credit section will dynamically display **"Made by Anmol Kathuria"**.
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **Frontend Library:** React.js (Vite)
+* **Frontend Framework:** React.js + Vite (leveraging React Router / URL parameter hooks)
 * **Styling:** Tailwind CSS
-* **Core Logic:** JavaScript (for the elusive button mechanics and conditional state rendering)
+* **Core Logic:** JavaScript (Dynamic state management, conditional rendering, and cursor-evasion mechanics)
 
 ---
 
-## 🚀 How It Works
+## 📦 Local Setup
 
-1. **The Trap is Set:** The page loads with a simple question: *"Would you like to date me?"*
-2. **The Defense System:** If the user tries to hover over or click **No**, a JavaScript handler dynamically randomizes its absolute position and changes the button text to playfully tease them.
-3. **The Only Way Out:** The user is forced to click **Yes**, triggering a redirection to the victory screen with a direct link to my Instagram handle.
-
----
-
-## 📦 Getting Started
-
-To run this project locally and test it on your "target audience":
+To run this project locally and test your custom routes:
 
 ```bash
 # Clone the repository
@@ -44,4 +52,5 @@ npm install
 npm run dev
 
 ```
-## Disclaimer: No hearts were broken in the making of this application. Built for fun and interactive UX practice.
+## Disclaimer: No hearts were broken in the making of this application. Built for fun, dynamic routing practice, and interactive UX experimentation.
+```
