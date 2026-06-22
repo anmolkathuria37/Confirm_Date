@@ -20,11 +20,13 @@ You don't need to change the code to customize it for different people. Just use
 ### 1. Personalize for a Specific Person
 Append the person's name as a path parameter at the end of your deployed URL:
 `https://heybeautiful.vercel.app/Nandini`
+
 *Result:* The page dynamically updates its headings and questions to address **Nandini**.
 
 ### 2. Customize the Author Name
 Use the `author` query parameter to update the creator's credit:
 `https://heybeautiful.vercel.app/Nandini?author=Anmol%20Kathuria`
+
 *Result:* The footer or credit section will dynamically display **"Made by Anmol Kathuria"**.
 
 ---
@@ -43,7 +45,7 @@ To run this project locally and test your custom routes:
 
 ```bash
 # Clone the repository
-git clone [https://github.com/anmolkathuria37/your-repo-name.git](https://github.com/anmolkathuria37/your-repo-name.git)
+git clone https://github.com/anmolkathuria37/Confirm_Date.git
 
 # Install dependencies
 npm install
