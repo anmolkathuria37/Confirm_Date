@@ -70,7 +70,7 @@ const App1 = () => {
 
     const [index, setIndex] = useState(0);
 
-    const [yesSize, setYesSize] = useState(18);
+    const [yesSize, setYesSize] = useState(24);
 
     const [isMoved, setIsMoved] = useState(false);
 
@@ -176,7 +176,7 @@ const App1 = () => {
                         <div className='Buttons flex gap-4 mx-auto'>
 
                             {/* <button className={`bg-green-500 hover:bg-green-800 hover:cursor-pointer text-white px-4 py-2 transition-all duration-200 ease-in-out`}>Yes</button> */}
-                            <button className="bg-green-500 hover:bg-green-800 text-white px-4 py-2 transition-all duration-200 ease-in-out rounded-xl" onClick={handleYesClick} style={{ fontSize: `${yesSize}px`, padding: `${yesSize / 2}px` }}
+                            <button className="bg-green-500 hover:bg-green-800 text-white px-4 py-2 transition-all duration-200 ease-in-out rounded-xl font-bold w-auto" onClick={handleYesClick} style={{ fontSize: `${yesSize}px`, padding: `${yesSize / 2}px` }}
                             >
                                 Yes
                             </button>
