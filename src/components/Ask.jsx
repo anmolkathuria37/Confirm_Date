@@ -1,6 +1,5 @@
 import React from 'react'
 import '../components/Ask.css'
-import pleaseGif from '../assets/Please.gif'
 
 import { useParams } from 'react-router-dom'
 
@@ -14,7 +13,7 @@ const Ask = () => {
 
     return (
         <div>
-            <img className='mx-auto' src={pleaseGif} alt="Cute animated illustration" />
+            <img className='mx-auto' src='/Please.gif' alt="Cute animated illustration" />
 
             <h2>Hey <span>{formattedName ? (`${formattedName}`) : "Beautiful"} </span>, Would You Come To Date With Me...?</h2>
         </div>

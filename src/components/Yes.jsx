@@ -1,6 +1,5 @@
 import React from 'react'
 import { Footer } from './Footer'
-import yes from '../assets/yes.gif'
 
 const Yes = () => {
 
@@ -16,7 +15,7 @@ const Yes = () => {
             <div className="gif_container flex flex-col ">
                 <img
                     className='h-70 w-70 mx-auto'
-                    src={yes}
+                    src='/yes.gif'
                     alt="Cute animated illustration"
                 />
             </div>
