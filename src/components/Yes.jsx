@@ -16,7 +16,7 @@ const Yes = () => {
             <div className="gif_container flex flex-col ">
                 <img
                     className='h-70 w-70 mx-auto'
-                    src="src/assets/yes.gif"
+                    src={yes}
                     alt="Cute animated illustration"
                 />
             </div>
