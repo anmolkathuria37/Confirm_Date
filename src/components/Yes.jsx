@@ -1,5 +1,6 @@
 import React from 'react'
 import { Footer } from './Footer'
+import yes from '../assets/yes.gif'
 
 const Yes = () => {
 
