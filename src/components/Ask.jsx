@@ -13,7 +13,7 @@ const Ask = () => {
 
     return (
         <div>
-            <img className='mx-auto' src="https://i.postimg.cc/pdNqPxx1/milk-and-mocha-cute.gif" alt="Cute animated illustration" />
+            <img className='mx-auto' src='src/assets/Please.gif' alt="Cute animated illustration" />
 
             <h2>Hey <span>{formattedName ? (`${formattedName}`) : "Beautiful"} </span>, Would You Come To Date With Me...?</h2>
         </div>
