@@ -12,7 +12,7 @@ const Ask = () => {
         : "";
 
     return (
-        <div>
+        <div className='main mt-[20vh]'>
             <img className='mx-auto' src='/Please.gif' alt="Cute animated illustration" />
 
             <h2>Hey <span>{formattedName ? (`${formattedName}`) : "Beautiful"} </span>, Would You Come To Date With Me...?</h2>
