@@ -32,7 +32,7 @@ const Admin = () => {
             const token = localStorage.getItem("adminToken")
 
             const response = await fetch(
-                `http://localhost:5000/api/dates/${id}`,
+                `https://confirm-date.onrender.com/api/dates/${id}`,
                 {
                     method: "DELETE",
                     headers: {
@@ -99,7 +99,7 @@ const Admin = () => {
             const token = localStorage.getItem("adminToken")
 
             const response = await fetch(
-                `http://localhost:5000/api/dates/${editingDate._id}`,
+                `https://confirm-date.onrender.com/api/dates/${editingDate._id}`,
                 {
                     method: "PUT",
                     headers: {
