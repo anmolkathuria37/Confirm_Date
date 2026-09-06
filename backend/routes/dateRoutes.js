@@ -4,6 +4,8 @@ const DateModel = require("../models/Date");
 
 const protect = require("../middleware/authMiddleware");
 
+const sendDateConfirmationEmail = require("../services/emailService");
+
 const router = express.Router();
 
 // Create a new date
@@ -29,6 +31,8 @@ router.post("/", async (req, res) => {
 
         // Save to MongoDB
         const savedDate = await newDate.save();
+
+        // await sendDateConfirmationEmail(savedDate);
 
         res.status(201).json({
             success: true,
