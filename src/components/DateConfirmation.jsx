@@ -130,7 +130,7 @@ const DateConfirmation = () => {
 
 
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center px-4 my-4">
+        <div className="min-h-screen flex flex-col items-center justify-center px-4">
 
             <h1 className="text-4xl font-bold text-center mb-3">
                 IT'S A DATE!!! 🥹❤️
