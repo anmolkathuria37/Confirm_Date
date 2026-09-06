@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react'
 import DateCard from "./DateCard"
+import { Footer } from './Footer'
 
 import { useLocation, useNavigate } from 'react-router-dom'
 
@@ -250,7 +251,7 @@ const DateConfirmation = () => {
             </button> */}
 
 
-
+            <Footer/>
         </div>
     )
 }

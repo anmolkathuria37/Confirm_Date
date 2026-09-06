@@ -1,6 +1,7 @@
 
 import React from "react"
 
+
 const DateCard = ({ date, time, place, activity }) => {
 
     const formattedDate = new Date(date).toLocaleDateString(
