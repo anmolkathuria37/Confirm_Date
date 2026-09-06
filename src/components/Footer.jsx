@@ -12,8 +12,8 @@ export const Footer = () => {
     return (
 
         <>
-            <div className="footer-basic text-amber-50 fixed w-[100vw] left-0 bottom-0" >
-                <footer className='flex-col content-center'>
+            <div className="footer-basic text-amber-50 fixed w-[100vw] overflow-hidden left-0 bottom-0 flex items-center justify-center " >
+                <footer className='flex-col content-center items-center justify-center'>
                     {/* <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
                     <ul class="list-inline">
                         <li class="list-inline-item"><a href="#">Home</a></li>
