@@ -170,7 +170,7 @@ const Admin = () => {
             }
 
             const response = await fetch(
-                "http://localhost:5000/api/dates",
+                "https://confirm-date.onrender.com/api/dates",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,
