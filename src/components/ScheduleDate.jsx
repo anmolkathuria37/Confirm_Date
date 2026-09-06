@@ -26,7 +26,7 @@ const ScheduleDate = () => {
     }
 
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center px-4">
+        <div className="min-h-screen flex flex-col items-center justify-center px-4 my-5">
 
             <h1 className="text-3xl font-bold mb-2">
                 Okayyy... Let's Fix Our Date 🥰
