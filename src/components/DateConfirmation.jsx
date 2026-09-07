@@ -102,7 +102,7 @@ const DateConfirmation = () => {
             }
 
             // Minimum 2.5 seconds loading 
-            await new Promise(resolve => setTimeout(resolve, 1000) )
+            await new Promise(resolve => setTimeout(resolve, 1500) )
 
 
             
@@ -232,9 +232,14 @@ const DateConfirmation = () => {
                 {/* BUTTON TEXT */}
                 <span className="relative z-10">
                     {loading
-                        ? "Saving Date... ❤️"
-                        : saved
-                            ? "Date Saved Successfully ✅"
+                        ? (<>
+                            <span >Saving Date...</span> 
+                            <span className="animate-heart-rotate inline-block">❤️</span> 
+                            
+                        </>
+                        )
+                        : saved?
+                             "Date Saved Successfully ✅"
                             : "Confirm This Date ❤️"
                     }
                 </span>
