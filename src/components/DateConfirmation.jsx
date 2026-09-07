@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import DateCard from "./DateCard"
 import { Footer } from './Footer'
+import './DateConfirmation.css'
 
 import { useLocation, useNavigate } from 'react-router-dom'
 
@@ -175,32 +176,10 @@ const DateConfirmation = () => {
 
 
             {/* NEW: Confirm button */}
-            {/* <button
-                className="btn cursor-pointer mt-6"
-                onClick={handleConfirm}
-                disabled={loading}
-            >
-                {loading
-                    ? "Saving... ❤️"
-                    : "Confirm Date ❤️"
-                }
-            </button> */}
             
             {/* CONFIRM BUTTON */}
 
             {/* <button
-                    onClick={handleConfirm}
-                    disabled={loading}
-                className="mt-8 px-6 py-3 rounded-2xl border border-rose-300 text-rose-600 font-semibold hover:bg-rose-500 hover:text-white transition-all duration-300 disabled:opacity-50 my-5 "
-            >
-                    {loading
-                        ? "Saving Date... ❤️"
-                        : "Confirm This Date ❤️"
-                    }
-            </button>  */}
-
-
-            <button
                 onClick={handleConfirm}
                 disabled={loading || saved}
                 className={`mt-8 px-6 py-3 rounded-2xl border font-semibold transition-all duration-300 my-5
@@ -222,7 +201,48 @@ const DateConfirmation = () => {
                         ? "Date Saved Successfully ✅"
                         : "Confirm This Date ❤️"
                 }
-            </button>
+            </button> */}
+
+
+            <button
+                onClick={handleConfirm}
+                disabled={loading || saved}
+                className={`relative overflow-hidden mt-8 px-6 py-3 rounded-2xl border font-semibold transition-all duration-500 my-5
+                ${saved
+                        ? "border-green-300 bg-green-50 text-green-600 cursor-not-allowed"
+                        : "border-rose-300 text-rose-600 hover:bg-rose-500 hover:text-white"
+                    }
+                ${loading
+                        ? "opacity-90 cursor-wait"
+                        : ""
+                    }
+            `}
+            >
+                {/* LEFT → RIGHT LOADING ANIMATION */}
+                {loading && (
+                    <span
+                        className="absolute inset-0 bg-rose-500/20"
+                        style={{
+                            transform: "translateX(0)",
+                            animation: "loadingSlide 1.2s linear infinite",
+                        }}
+                    />
+                )}
+
+                {/* BUTTON TEXT */}
+                <span className="relative z-10">
+                    {loading
+                        ? "Saving Date... ❤️"
+                        : saved
+                            ? "Date Saved Successfully ✅"
+                            : "Confirm This Date ❤️"
+                    }
+                </span>
+            </button> 
+
+
+
+
 
 
 
